@@ -1,0 +1,54 @@
+@use 'sass:math';
+@import 'mixins';
+
+@mixin start($amount) {
+  grid-column-start: $amount;
+}
+
+@mixin col($colIndex) {
+  grid-column-end: span $colIndex;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat($grid-columns, 1fr);
+  column-gap: $grid-gap;
+  width: 100%;
+
+  > * {
+    grid-column-end: span 12;
+  }
+
+  @include max(m) {
+    column-gap: $grid-gap--mobile;
+  }
+}
+
+@for $colIndex from 1 through $grid-columns {
+  body .col-#{$colIndex} {
+    grid-column-end: span $colIndex;
+  }
+
+  body .push-#{$colIndex} {
+    grid-column-start: $colIndex + 1;
+  }
+
+  @each $bp, $size in $breakpoints {
+    @include min($bp) {
+      body .col-#{$bp}#{$colIndex} {
+        grid-column-end: span $colIndex;
+      }
+
+      body .push-#{$bp}#{$colIndex} {
+        grid-column-start: $colIndex + 1;
+      }
+    }
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: $max-container-width;
+  margin: 0 auto;
+  padding: 0 math.div($gutter, 2);
+}
