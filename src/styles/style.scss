@@ -1,11 +1,6 @@
 @import './base/reset';
+@import './base/typography';
 @import './base/variables';
 @import './base/mixins';
 @import './base/grid';
 
-body {
-  font-family: $font-body;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
-}
