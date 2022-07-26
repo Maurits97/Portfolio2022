@@ -1,0 +1,18 @@
+@import '../base/variables.scss';
+@import '../base/mixins.scss';
+
+.intro {
+  font-size: 1.8rem;
+
+  @include min(s) {
+    font-size: 3.4rem;
+  }
+
+  @include min(m) {
+    font-size: 4rem;
+  }
+
+  p + p {
+    margin-top: 4rem;
+  }
+}
