@@ -1,14 +1,6 @@
 @use 'sass:math';
 @import 'mixins';
 
-@mixin start($amount) {
-  grid-column-start: $amount;
-}
-
-@mixin col($colIndex) {
-  grid-column-end: span $colIndex;
-}
-
 .grid {
   display: grid;
   grid-template-columns: repeat($grid-columns, 1fr);
@@ -25,11 +17,11 @@
 }
 
 @for $colIndex from 1 through $grid-columns {
-  body .col-#{$colIndex} {
+  .col-#{$colIndex} {
     grid-column-end: span $colIndex;
   }
 
-  body .push-#{$colIndex} {
+  .push-#{$colIndex} {
     grid-column-start: $colIndex + 1;
   }
 
