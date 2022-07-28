@@ -28,8 +28,8 @@
   animation: 1s opacity ease-in-out;
 
   @supports (-webkit-text-stroke: .08rem $black) {
-    -webkit-text-stroke-color: $black;
     -webkit-text-stroke-width: .08rem;
+    color: $black;
   }
 
   @include min(xs) {
@@ -87,10 +87,10 @@
   display: block;
   color: $black;
 
-  @supports (-webkit-text-stroke: .1rem $black) {
+  @supports (-webkit-text-stroke: .08rem $black) {
     -webkit-text-stroke-color: $black;
     -webkit-text-stroke-width: .08rem;
-    -webkit-text-fill-color: $white;
+    color: $white;
   }
 
   @include min(s) {

@@ -13,6 +13,13 @@
       "projectUrl": "https://Beequip.nl",
       "suffix": ".nl",
       "color": "#FFBF00"
+    },
+    {
+      "projectName": "Dashmote",
+      "stack": ["Development", "test", "test", "test"],
+      "projectUrl": "https://dashmote.com",
+      "suffix": ".com",
+      "color": "#373FFF"
     }
   ],
   "freelance": [
