@@ -7,7 +7,7 @@ export default function Work() {
   const getWorkItem = (item, index) => {
     return (
       <div className={ styles['work__item'] } key={ index }>
-        <p className={`raleway ${ styles['work__item-name'] } `}
+        <p className={`raleway ${ styles['work__item-name'] }`}
           style={ item.color ? { 
             backgroundImage: `-webkit-linear-gradient(0deg, ${ item.color }, #fff)` 
           } : {}}>
