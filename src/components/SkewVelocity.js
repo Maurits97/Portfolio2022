@@ -1,19 +1,10 @@
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useEffect } from "react";
 
-window.addEventListener('DOMContentLoaded', (event) => {
-  // Safari still didn't find DOM elements after the dom loaded, an extra 100ms seems to do the trick.
-  setTimeout(
-    () => {
-      gsapFunction();
-    }, 100)
-});
-
-function gsapFunction() {
+function activateScrollTrigger() {
   gsap.registerPlugin(ScrollTrigger);
-  console.log(document.querySelector('.skew'))
-  
-  
+    
   let proxy = { skew: 0 },
   skewSetter = gsap.quickSetter(".skew", "skewY", "deg"), // fast
   clamp = gsap.utils.clamp(-5, 5); // don't let the skew go beyond 20 degrees. 
@@ -33,9 +24,12 @@ function gsapFunction() {
   gsap.set(".skew", {transformOrigin: "left center", force3D: true});
 }
 
+export default function SkewVelocity({ children }) {
+  useEffect(() => { activateScrollTrigger() });
 
-
-
-
-
-
+  return (
+    <div className="skew">
+      { children }
+    </div>
+  )
+}

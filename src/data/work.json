@@ -1,37 +1,37 @@
 {
-  "work": {
-    "oaky": {
+  "work": [
+    {
       "projectName": "Oaky",
       "stack": ["Development", "test", "test", "test"],
       "projectUrl": "https://oaky.com",
-      "countryCode": ".com",
+      "suffix": ".com",
       "color": "#FF6A00"
     },
-    "beequip": {
+    {
       "projectName": "Beequip",
       "stack": ["Development", "test", "test", "test"],
       "projectUrl": "https://Beequip.nl",
-      "countryCode": ".nl",
+      "suffix": ".nl",
       "color": "#FFBF00"
     }
-  },
-  "freelance": {
-    "crypto": {
+  ],
+  "freelance": [
+    {
       "projectName": "Crypto website",
       "stack": ["Development & design", "test", "test", "test"],
       "projectUrl": "https://crypto.mauritsbrouwer.nl"
     },
-    "fivides": {
+    {
       "projectName": "Fivides",
       "stack": ["Development & design", "test", "test", "test"],
       "projectUrl": "https://fivides.nl",
-      "countryCode": ".nl",
+      "suffix": ".nl",
       "color": "#39FF00"
     },
-    "brigitteStark": {
+    {
       "projectName": "Art portfolio",
       "stack": ["Development & design", "test", "test", "test"],
       "projectUrl": "https://brigittestark.nl"
     }
-  }
+  ]
 }

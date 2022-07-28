@@ -41,6 +41,10 @@
   @include min(s) {
     margin-bottom: 1.6rem;
     font-size: 6.4rem;
+
+    @supports (-webkit-text-stroke-width: .12rem) {
+      -webkit-text-stroke-width: .12rem;
+    }
   }
 
   @include min(m) {
@@ -87,6 +91,12 @@
     -webkit-text-stroke-color: $black;
     -webkit-text-stroke-width: .08rem;
     -webkit-text-fill-color: $white;
+  }
+
+  @include min(s) {
+    @supports (-webkit-text-stroke-width: .12rem) {
+      -webkit-text-stroke-width: .12rem;
+    }
   }
 
   @include min(m) {
