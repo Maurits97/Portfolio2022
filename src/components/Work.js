@@ -5,17 +5,29 @@ export default function Work() {
   const workData = work;
 
   const getWorkItem = (item, index) => {
-    return (
-      <div className={ styles['work__item'] } key={ index }>
-        <p className={`raleway ${ styles['work__item-name'] }`}
-          style={ item.color ? { 
-            backgroundImage: `-webkit-linear-gradient(0deg, ${ item.color }, #fff)` 
-          } : {}}>
-          { item.projectName }
-        </p>
-        { item.suffix ? <span className={`raleway ${ styles['work__suffix'] } `}>{ item.suffix }</span> : ''}
-      </div>
-    )
+    if (item.activate) {
+      return (
+        <div className={ styles['work__item'] } key={ index }>
+          <p className={`raleway ${ styles['work__item-name'] }`}
+            style={ item.color ? { 
+              backgroundImage: `-webkit-linear-gradient(0deg, ${ item.color }, #fff)` 
+            } : {} }>
+            { item.projectName }
+          </p>
+          { item.suffix ? <span className={`raleway ${ styles['work__suffix'] } `}>{ item.suffix }</span> : ''}
+          <div className={ styles['work__stack'] }>
+            { item.stack.map((stack, index) =>  
+              <p className={ styles['work__stack-item'] } key={ index }>
+                { stack }
+                { item.stack.length > (index + 1) ? ' - ' : ''}
+              </p>
+            )}
+          </div>
+        </div>
+      ) 
+    } else {
+      return null;
+    }
   }
   
   return (

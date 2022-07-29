@@ -2,43 +2,49 @@
   "work": [
     {
       "projectName": "Oaky",
-      "stack": ["Development", "test", "test", "test"],
+      "stack": ["Development", "Craft cms", "PHP", "Twig", "SCSS", "Swiper", "BEM"],
       "projectUrl": "https://oaky.com",
       "suffix": ".com",
-      "color": "#FF6A00"
+      "color": "#FF6A00",
+      "activate": true
     },
     {
       "projectName": "Beequip",
-      "stack": ["Development", "test", "test", "test"],
+      "stack": ["Development", "Sanity cms", "Next.js", "Tailwindcss", "Swiper"],
       "projectUrl": "https://Beequip.nl",
       "suffix": ".nl",
-      "color": "#FFBF00"
+      "color": "#FFBF00",
+      "activate": true
     },
     {
       "projectName": "Dashmote",
-      "stack": ["Development", "test", "test", "test"],
+      "stack": ["Development", "Wordpress", "PHP", "ACF", "SCSS"],
       "projectUrl": "https://dashmote.com",
       "suffix": ".com",
-      "color": "#373FFF"
+      "color": "#373FFF",
+      "activate": true
     }
   ],
   "freelance": [
     {
       "projectName": "Crypto website",
-      "stack": ["Development & design", "test", "test", "test"],
-      "projectUrl": "https://crypto.mauritsbrouwer.nl"
+      "stack": ["Development & design", "React.js", "SCSS", "Redux", "Crypto public API", "Recharts"],
+      "projectUrl": "https://crypto.mauritsbrouwer.nl",
+      "activate": true
     },
     {
       "projectName": "Fivides",
-      "stack": ["Development & design", "test", "test", "test"],
+      "stack": ["Development & design", "Next.js", "SCSS"],
       "projectUrl": "https://fivides.nl",
       "suffix": ".nl",
-      "color": "#39FF00"
+      "color": "#39FF00",
+      "activate": true
     },
     {
       "projectName": "Art portfolio",
-      "stack": ["Development & design", "test", "test", "test"],
-      "projectUrl": "https://brigittestark.nl"
+      "stack": ["Development & design", "Vue.js", "SCSS"],
+      "projectUrl": "https://brigittestark.nl",
+      "activate": true
     }
   ]
 }

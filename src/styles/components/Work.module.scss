@@ -18,22 +18,23 @@
 
 .work__item {
   &:not(:last-of-type) {
-    margin-bottom: 3.2rem;
+    margin-bottom: 4rem;
   }
 }
 
 .work__item-name {
   display: inline-block;
+  margin-bottom: .8rem;
   color: $black;
   text-transform: uppercase;
-  font-size: 5.2rem;
+  font-size: 5.6rem; //4rem
   font-weight: 700;
   line-height: 1.167;
   letter-spacing: -0.08rem;
   
   @supports (-webkit-text-stroke: .15rem $black) {
     -webkit-text-stroke-color: $black;
-    -webkit-text-stroke-width: .15rem;
+    -webkit-text-stroke-width: .13rem;
     // For if project has a color (gradient)
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -49,6 +50,16 @@
 .work__suffix {
   color: $black;
   font-size: 1.2rem;
-  font-weight: 700;
+  font-weight: 600;
   margin-left: .2rem;
+}
+
+.work__stack {
+  margin-bottom: .8rem;
+  font-size: 1.6rem;
+  font-style: italic;
+}
+
+.work__stack-item {
+  display: inline;
 }
