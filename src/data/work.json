@@ -18,7 +18,7 @@
     },
     {
       "projectName": "Dashmote",
-      "stack": ["Development", "Wordpress", "PHP", "ACF", "SCSS"],
+      "stack": ["Development", "Wordpress", "PHP", "Advanced Custom Fields (ACF)", "SCSS"],
       "projectUrl": "https://dashmote.com",
       "suffix": ".com",
       "color": "#373FFF",

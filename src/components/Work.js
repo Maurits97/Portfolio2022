@@ -23,6 +23,11 @@ export default function Work() {
               </p>
             )}
           </div>
+          <div className={`raleway ${ styles['work__link'] } `}>
+            <a href={ item.projectUrl } target="_blank" rel="noreferrer noopener">Visit website
+              <span className="material-symbols-outlined">arrow_right</span>
+            </a>
+          </div>
         </div>
       ) 
     } else {
