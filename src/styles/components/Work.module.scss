@@ -74,7 +74,7 @@
     align-items: center;
     text-decoration: none;
     color: $black;
-    background: linear-gradient(to right, #5F5F5F 20%, #D9D9D9 40%, #D9D9D9 60%, #5F5F5F 80%);
+    background: linear-gradient(to right, $grey 20%, $grey-light 40%, $grey-light 60%, $grey 80%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

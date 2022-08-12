@@ -14,7 +14,6 @@ export default function Header() {
           <div className={ styles['header__paragraph-wrapper'] }>
             <p className={`raleway ${ styles['header__paragraph']}`}>with a passion for design.</p>
           </div>
-
         </SkewVelocity>
       </div>
     </header>

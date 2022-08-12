@@ -1,0 +1,18 @@
+@import '../base/variables';
+
+.showcase {
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.showcase__image {
+  overflow: hidden;
+  margin: 0 auto;
+  border-radius: 1.2rem;
+  box-shadow: .2rem .2rem 8rem rgba($black, 0.6);
+
+  img {
+    display: block;
+    width: 100%;
+  }
+}

@@ -2,7 +2,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect } from "react";
 
-function activateScrollTrigger() {
+function activateGsap() {
   gsap.registerPlugin(ScrollTrigger);
     
   let proxy = { skew: 0 },
@@ -25,7 +25,7 @@ function activateScrollTrigger() {
 }
 
 export default function SkewVelocity({ children }) {
-  useEffect(() => { activateScrollTrigger() });
+  useEffect(() => { activateGsap() });
 
   return (
     <div className="skew">
