@@ -8,13 +8,15 @@ export default function Work() {
     if (item.activate) {
       return (
         <div className={ styles['work__item'] } key={ index }>
-          <p className={`raleway ${ styles['work__item-name'] }`}
-            style={ item.color ? { 
-              backgroundImage: `-webkit-linear-gradient(0deg, ${ item.color }, #fff)` 
-            } : {} }>
-            { item.projectName }
-          </p>
-          { item.suffix ? <span className={`raleway ${ styles['work__suffix'] } `}>{ item.suffix }</span> : ''}
+          <a href={ item.projectUrl } target="_blank" rel="noreferrer noopener">
+            <p className={`raleway ${ styles['work__item-name'] }`}
+              style={ item.color ? { 
+                backgroundImage: `-webkit-linear-gradient(0deg, ${ item.color }, #fff)` 
+              } : {} }>
+              { item.projectName }
+            </p>
+            { item.suffix ? <span className={`raleway ${ styles['work__suffix'] } `}>{ item.suffix }</span> : ''}
+          </a>  
           <div className={ styles['work__stack'] }>
             { item.stack.map((stack, index) =>  
               <p className={ styles['work__stack-item'] } key={ index }>
@@ -25,7 +27,7 @@ export default function Work() {
           </div>
           <div className={`raleway ${ styles['work__link'] } `}>
             <a href={ item.projectUrl } target="_blank" rel="noreferrer noopener">Visit website
-              <span className="material-symbols-outlined">arrow_right</span>
+              <span className={ styles['work__link-icon'] }>&#9654;</span>
             </a>
           </div>
         </div>

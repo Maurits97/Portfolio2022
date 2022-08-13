@@ -1,4 +1,5 @@
 @import '../base/animations';
+@import '../base/mixins';
 @import '../base/variables';
 
 .work {
@@ -27,14 +28,14 @@
   margin-bottom: .8rem;
   color: $black;
   text-transform: uppercase;
-  font-size: 5.6rem; //4rem
+  font-size: 3.4rem;
   font-weight: 700;
   line-height: 1.167;
-  letter-spacing: -0.08rem;
+  letter-spacing: 0;
   
-  @supports (-webkit-text-stroke: .15rem $black) {
+  @supports (-webkit-text-stroke: .08rem $black) {
     -webkit-text-stroke-color: $black;
-    -webkit-text-stroke-width: .13rem;
+    -webkit-text-stroke-width: .08rem;
     // For if project has a color (gradient)
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -45,19 +46,45 @@
     // Otherwise set color from inline css will overwrite it.
     background-color: none !important;
   }
+
+  @include min(s) {
+    font-size: 4.8rem;
+
+    @supports (-webkit-text-stroke: .13rem $black) {
+      -webkit-text-stroke-width: .13rem;
+      color: $black;
+    }
+  }
+
+  @include min(m) {
+    font-size: 5.6rem;
+    letter-spacing: -0.08rem;
+  }
 }
 
 .work__suffix {
   color: $black;
   font-size: 1.2rem;
-  font-weight: 600;
+  font-weight: 500;
   margin-left: .2rem;
+
+  @include min(s) {
+    font-weight: 600;
+  }
 }
 
 .work__stack {
-  margin-bottom: .8rem;
-  font-size: 1.6rem;
+  margin-bottom: 1.6rem;
+  font-size: 1.4rem;
   font-style: italic;
+
+  @include min(s) {
+    font-size: 1.5rem;
+  }
+
+  @include min(m) {
+    font-size: 1.6rem;
+  }
 }
 
 .work__stack-item {
@@ -66,22 +93,33 @@
 
 .work__link {
   display: flex;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 600;
 
+  @include min(s) {
+    font-size: 1.3rem;
+  }
+
+  @include min(m) {
+    font-size: 1.4rem;
+  }
+
   a {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
+    display: inline;
     color: $black;
-    background: linear-gradient(to right, $grey 20%, $grey-light 40%, $grey-light 60%, $grey 80%);
+    background-image: linear-gradient(90deg, $grey 20%, $grey-light 40%, $grey-light 60%, $grey 80%);
     background-clip: text;
-    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
     background-size: 200% auto;
 
     &:hover {
       animation: shine 1.2s linear infinite;
     }
   }
+}
+
+.work__link-icon {
+  font-size: 1rem;
+  padding-left: .6rem;
 }

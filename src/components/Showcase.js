@@ -12,11 +12,11 @@ function activateGsap() {
       scrub: true,
       pin: '.js-showcase-pin',
       anticipatePin: 1,
-      markers: true,
+      // markers: true,
     }
   })
   .to(".js-center-image", { scale: 0.3, duration: 2 })
-  .to("js-center-image", { duration: 1 })
+  .to(".js-center-image", { duration: 1 })
 }
 
 
