@@ -9,8 +9,8 @@ export default function Links() {
       <div className="col-12">
         <h2 className={`h2 ${ styles['links__header'] }`}>Links</h2>
         { linksData.links.map((link, index) => 
-          <div>
-            <a className={`raleway ${ styles['links__link'] }`} href={ link.link } target="_blank" rel="noreferrer noopener" key={ index }>{ link.label }</a>
+          <div key={ index }>
+            <a className={`raleway ${ styles['links__link'] }`} href={ link.link } target="_blank" rel="noreferrer noopener">{ link.label }</a>
           </div>
         )}
       </div>

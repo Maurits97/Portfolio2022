@@ -2,7 +2,7 @@
 @import '../base/animations';
 
 .links {
-  margin-bottom: 40rem;
+  margin-bottom: 20rem;
 }
 
 .links__header {
@@ -15,12 +15,14 @@
   font-weight: 700;
   line-height: 1.167;
   letter-spacing: 0;
+  transition: all 300ms ease;
 
   @supports (-webkit-text-stroke: .08rem $black) {
     -webkit-text-stroke-color: $black;
     -webkit-text-stroke-width: .08rem;
     // For if project has a color (gradient)
-    background-size: 200% auto;
+    background-image: linear-gradient(180deg, $white 0%, $white 50%, $black 50%, $black 100% );
+    background-size: 100% 200%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -31,6 +33,7 @@
   }
 
   &:hover {
-    animation: shine 1.2s linear infinite;
+    // background-size: 100% 100%;
+    background-position: 100% 100%;
   }
 }
