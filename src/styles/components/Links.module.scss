@@ -1,0 +1,36 @@
+@import '../base/variables';
+@import '../base/animations';
+
+.links {
+  margin-bottom: 40rem;
+}
+
+.links__header {
+  margin-bottom: 1.6rem;
+}
+
+.links__link {
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.167;
+  letter-spacing: 0;
+
+  @supports (-webkit-text-stroke: .08rem $black) {
+    -webkit-text-stroke-color: $black;
+    -webkit-text-stroke-width: .08rem;
+    // For if project has a color (gradient)
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  @supports not (-webkit-text-stroke: .1rem $black) {
+    // Fallback if stroke is not supported. Background color has to be set to none.
+    background-color: none;
+  }
+
+  &:hover {
+    animation: shine 1.2s linear infinite;
+  }
+}
