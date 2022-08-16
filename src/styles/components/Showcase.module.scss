@@ -1,6 +1,7 @@
 @import '../base/variables';
 
 .showcase {
+  position: relative;
   margin-bottom: 1rem;
   width: 100%;
 }
@@ -10,9 +11,43 @@
   margin: 0 auto;
   border-radius: 1.2rem;
   box-shadow: .2rem .2rem 8rem rgba($black, 0.4);
+}
 
-  img {
-    display: block;
-    width: 100%;
+.showcase__side-images {
+  position: absolute;
+  top: 53%;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.showcase__side-image {
+  position: absolute;
+  overflow: hidden;
+  border-radius: .3rem;
+  box-shadow: .2rem .2rem 4rem rgba($black, 0.4);
+
+  &--one {
+    top: 0;
+    left: 0;
+    width: 36%;
+  }
+
+  &--two {
+    top: 50%;
+    left: 5%;
+    width: 33%;
+  }
+
+  &--three {
+    top: -20%;
+    right: 2%;
+    width: 37%;
+  }
+
+  &--four {
+    top: 45%;
+    right: 4%;
+    width: 30%;
   }
 }
