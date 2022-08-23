@@ -41,12 +41,14 @@
 .showcase__side-image {
   position: absolute;
   overflow: hidden;
-  border-radius: 1.2rem;
+  border-radius: .5rem;
   box-shadow: .2rem .2rem 4rem rgba($black, 0.4);
 
-  @include max(s) {
+  @include min(s) {
     border-radius: .3rem;
+  }
 
+  @include max(s) {
     &:nth-child(n + 4) {
       display: none;
     }
