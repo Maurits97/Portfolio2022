@@ -27,7 +27,7 @@ export default function Work() {
           </div>
           <div className={`raleway ${ styles['work__link'] } `}>
             <a href={ item.projectUrl } target="_blank" rel="noreferrer noopener">Visit website
-              <span className={ styles['work__link-icon'] }>&#9654;</span>
+              <span className={ styles['work__link-icon'] }>&#x25BA;</span>
             </a>
           </div>
         </div>
