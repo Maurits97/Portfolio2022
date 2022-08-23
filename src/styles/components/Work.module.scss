@@ -4,9 +4,18 @@
 
 .work {
   position: relative;
-  margin-top: -30rem;
+  margin-top: -10rem;
+  // margin-top: -5%;
   margin-bottom: 10rem;
   animation: opacity 1s ease-in-out;
+
+  @include min(s) {
+    margin-top: -15rem;
+  }
+
+  @include min(m) {
+    margin-top: -30rem;
+  }
 }
 
 .header {

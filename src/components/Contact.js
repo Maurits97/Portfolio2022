@@ -3,10 +3,21 @@ import styles from '../styles/components/Contact.module.scss';
 
 function copyToClipboard(event) {
   const eventData = event.target.dataset.email;
-  navigator.clipboard.writeText(eventData);
 
-  // User copy confirmation
-  event.target.innerHTML = '&#10003; Copied!';
+  // Check if origin is secure, otherwise copy will not work.
+  if (window.isSecureContext) {
+    // Copy to clipboard, success.
+    navigator.clipboard.writeText(eventData);
+    event.target.innerHTML = '&#10003; Copied!';
+  } else {
+    // Copy failed
+    event.target.innerHTML = '&#10005; Copy failed';
+    console.log(`
+      Copy failed because of insecure origin.
+      Needs to be HTTPS or localhost.
+    `)
+  }
+
   setTimeout(() => {
     event.target.innerHTML = 'Copy Email';
   }, 1500)
