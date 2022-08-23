@@ -96,12 +96,12 @@ export default function Showcase() {
             </a>
           </div>
           <div className={`js-side-image--two ${ styles['showcase__side-image'] } ${ styles['showcase__side-image--two'] }`}>
-            <a href={ workData.freelance[1].projectUrl } rel="noreferrer noopener" target='_blank'>
+            <a href={ workData.work[1].projectUrl } rel="noreferrer noopener" target='_blank'>
               <img src='./img/work/oaky-maurits-brouwer.png' alt="Project oaky" /> 
             </a>
           </div>
           <div className={`js-side-image--three ${ styles['showcase__side-image'] } ${ styles['showcase__side-image--three'] }`}>
-            <a href={ workData.work[1].projectUrl } rel="noreferrer noopener" target='_blank'>
+            <a href={ workData.freelance[1].projectUrl } rel="noreferrer noopener" target='_blank'>
               <img src='./img/work/fivides-maurits-brouwer.png' alt="Project oaky" /> 
             </a>
           </div>
