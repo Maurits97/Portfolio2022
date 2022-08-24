@@ -4,10 +4,11 @@
 
 .intro {
   font-size: 1.8rem;
-  margin-bottom: 30rem;
+  margin-bottom: 15rem;
   animation: opacity 1s ease-in-out;
 
   @include min(s) {
+    margin-bottom: 30rem;
     font-size: 3.4rem;
   }
 

@@ -1,6 +1,7 @@
 import { gsap } from "gsap";
 import { useEffect } from "react";
 import work from '../data/work.json';
+import Image from './core/Image';
 
 import styles from '../styles/components/Showcase.module.scss';
 
@@ -86,28 +87,63 @@ export default function Showcase() {
     <section className={`grid container js-showcase-container ${ styles.showcase }`}>
       <div className={`col-12 js-showcase-pin ${ styles['showcase-wrapper'] }`}>
         <div className={`js-center-image ${ styles['showcase__image']} `}>
-          <img src='./img/maurits-brouwer-2022-portfolio.jpg' alt="Maurits Brouwer with sunglasses and a cap" /> 
+          {/* <img src='./img/maurits-brouwer-2022-portfolio.jpg' alt="Maurits Brouwer with sunglasses and a cap" />  */}
+          <Image 
+            fileName="maurits-brouwer-2022-portfolio"
+            alt="Maurits Brouwer with sunglasses and a cap"
+            height="1600"
+            width="1068"
+            sizes="100vw"
+          />
         </div>
 
         <div className={`js-showcase-side-pin ${ styles['showcase__side-images'] }`}>
           <div className={`js-side-image--one ${ styles['showcase__side-image'] } ${ styles['showcase__side-image--one'] }`}>
             <a href={ workData.work[0].projectUrl } rel="noreferrer noopener" target='_blank'>
-              <img src='./img/work/oaky-maurits-brouwer.png' alt="Project oaky" />
+              {/* <img src='./img/work/oaky-maurits-brouwer.png' alt="Project oaky" /> */}
+              <Image 
+                fileName="oaky-maurits-brouwer"
+                alt="Project oaky"
+                height="2159"
+                width="3477"
+                sizes="100vw"
+              />
             </a>
           </div>
           <div className={`js-side-image--two ${ styles['showcase__side-image'] } ${ styles['showcase__side-image--two'] }`}>
             <a href={ workData.work[1].projectUrl } rel="noreferrer noopener" target='_blank'>
-              <img src='./img/work/oaky-maurits-brouwer.png' alt="Project oaky" /> 
+              {/* <img src='./img/work/oaky-maurits-brouwer.png' alt="Project oaky" />  */}
+              <Image 
+                fileName="oaky-maurits-brouwer"
+                alt="Project Beequip"
+                height="2159"
+                width="3477"
+                sizes="100vw"
+              />
             </a>
           </div>
           <div className={`js-side-image--three ${ styles['showcase__side-image'] } ${ styles['showcase__side-image--three'] }`}>
             <a href={ workData.freelance[1].projectUrl } rel="noreferrer noopener" target='_blank'>
-              <img src='./img/work/fivides-maurits-brouwer.png' alt="Project oaky" /> 
+              {/* <img src='./img/work/fivides-maurits-brouwer.png' alt="Project oaky" />  */}
+              <Image 
+                fileName="fivides-maurits-brouwer"
+                alt="Project Fivides"
+                height="2096"
+                width="3086"
+                sizes="100vw"
+              />
             </a>
           </div>
           <div className={`js-side-image--four ${ styles['showcase__side-image'] } ${ styles['showcase__side-image--four'] }`}>
             <a href={ workData.freelance[0].projectUrl } rel="noreferrer noopener" target='_blank'>
-              <img src='./img/work/crypto-maurits-brouwer.png' alt="Project oaky" /> 
+              {/* <img src='./img/work/crypto-maurits-brouwer.png' alt="Project oaky" />  */}
+              <Image 
+                fileName="crypto-maurits-brouwer"
+                alt="Project Fivides"
+                height="1400"
+                width="2480"
+                sizes="100vw"
+              />
             </a>
           </div>
         </div>
