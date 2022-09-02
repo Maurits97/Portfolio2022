@@ -2,18 +2,20 @@
   "work": [
     {
       "projectName": "Oaky",
-      "stack": ["Development", "Craft cms", "PHP", "Twig", "SCSS", "Swiper", "BEM"],
+      "stack": ["Development", "Craft CMS", "PHP", "Twig", "SCSS", "Swiper", "BEM"],
       "projectUrl": "https://oaky.com",
       "suffix": ".com",
       "color": "#FF6A00",
+      "live": true,
       "activate": true
     },
     {
       "projectName": "Beequip",
-      "stack": ["Development", "Sanity cms", "Next.js", "Tailwindcss", "Swiper"],
+      "stack": ["Development", "Sanity CMS", "Next.js", "Tailwindcss", "Swiper"],
       "projectUrl": "https://Beequip.nl",
       "suffix": ".nl",
       "color": "#FFBF00",
+      "live": false,
       "activate": true
     },
     {
@@ -22,14 +24,25 @@
       "projectUrl": "https://dashmote.com",
       "suffix": ".com",
       "color": "#373FFF",
+      "live": true,
       "activate": true
     }
   ],
   "freelance": [
     {
+      "projectName": "Art portfolio",
+      "stack": ["Development & design", "Next.js", "Prismic CMS", "Static Site Generation (SSG)", "Vercel", "SCSS"],
+      "projectUrl": "https://brigittestark.nl",
+      "color": "#595959",
+      "live": true,
+      "activate": true
+    },
+    {
       "projectName": "Crypto website",
-      "stack": ["Development & design", "React.js", "SCSS", "Redux", "Crypto public API", "Recharts"],
+      "stack": ["Development & design", "React.js", "Redux", "SCSS", "Crypto public API", "Recharts"],
       "projectUrl": "https://crypto.mauritsbrouwer.nl",
+      "color": "#345ae7",
+      "live": true,
       "activate": true
     },
     {
@@ -38,12 +51,7 @@
       "projectUrl": "https://fivides.nl",
       "suffix": ".nl",
       "color": "#39FF00",
-      "activate": true
-    },
-    {
-      "projectName": "Art portfolio",
-      "stack": ["Development & design", "Vue.js", "SCSS"],
-      "projectUrl": "https://brigittestark.nl",
+      "live": true,
       "activate": true
     }
   ]

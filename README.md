@@ -78,5 +78,5 @@ I've added homepage: '.' to the package.json. I might need to remove that later 
 To optimise images:
 1. Use Image core component.
 2. Put images in img folder
-3. When done run: node ./generate-images.json
+3. When done developing run: node ./generate-images.json
 4. Images will be generated in img/optimized/

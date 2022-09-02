@@ -40,11 +40,11 @@ function activateGsap() {
     scrollTrigger: {
       trigger: '.js-showcase-container',
       start: 'center center',
-      end: 'center+=800px center',
+      end: 'center+=1500px center',
       scrub: true,
       pin: '.js-center-image',
       anticipatePin: 1,
-      // markers: true,
+      markers: true,
     }
   })
   .to(".js-center-image", centerImageProps() )
@@ -53,18 +53,16 @@ function activateGsap() {
   // Force load images
   .progress(1).progress(0)
 
-  // scale: 0.5 transformOrigin:"bottom"
-
   // side images
   gsap.timeline({
     scrollTrigger: {
       trigger: '.js-showcase-container',
       start: 'center center',
-      end: 'center+=400px center',
+      end: 'center+=750px center',
       scrub: true,
       pin: '.js-showcase-side-pin',
       anticipatePin: 1,
-      // markers: true,
+      markers: true,
     }
   })
   .add('start')
@@ -76,9 +74,6 @@ function activateGsap() {
   .progress(1).progress(0)
 }
 
-
-
-
 export default function Showcase() {
   useEffect(() => { activateGsap() });
   const workData = work;
@@ -87,7 +82,6 @@ export default function Showcase() {
     <section className={`grid container js-showcase-container ${ styles.showcase }`}>
       <div className={`col-12 js-showcase-pin ${ styles['showcase-wrapper'] }`}>
         <div className={`js-center-image ${ styles['showcase__image']} `}>
-          {/* <img src='./img/maurits-brouwer-2022-portfolio.jpg' alt="Maurits Brouwer with sunglasses and a cap" />  */}
           <Image 
             fileName="maurits-brouwer-2022-portfolio"
             alt="Maurits Brouwer with sunglasses and a cap"
@@ -100,7 +94,6 @@ export default function Showcase() {
         <div className={`js-showcase-side-pin ${ styles['showcase__side-images'] }`}>
           <div className={`js-side-image--one ${ styles['showcase__side-image'] } ${ styles['showcase__side-image--one'] }`}>
             <a href={ workData.work[0].projectUrl } rel="noreferrer noopener" target='_blank'>
-              {/* <img src='./img/work/oaky-maurits-brouwer.png' alt="Project oaky" /> */}
               <Image 
                 fileName="oaky-maurits-brouwer"
                 alt="Project oaky"
@@ -112,7 +105,6 @@ export default function Showcase() {
           </div>
           <div className={`js-side-image--two ${ styles['showcase__side-image'] } ${ styles['showcase__side-image--two'] }`}>
             <a href={ workData.work[1].projectUrl } rel="noreferrer noopener" target='_blank'>
-              {/* <img src='./img/work/oaky-maurits-brouwer.png' alt="Project oaky" />  */}
               <Image 
                 fileName="oaky-maurits-brouwer"
                 alt="Project Beequip"
@@ -124,7 +116,6 @@ export default function Showcase() {
           </div>
           <div className={`js-side-image--three ${ styles['showcase__side-image'] } ${ styles['showcase__side-image--three'] }`}>
             <a href={ workData.freelance[1].projectUrl } rel="noreferrer noopener" target='_blank'>
-              {/* <img src='./img/work/fivides-maurits-brouwer.png' alt="Project oaky" />  */}
               <Image 
                 fileName="fivides-maurits-brouwer"
                 alt="Project Fivides"
@@ -136,7 +127,6 @@ export default function Showcase() {
           </div>
           <div className={`js-side-image--four ${ styles['showcase__side-image'] } ${ styles['showcase__side-image--four'] }`}>
             <a href={ workData.freelance[0].projectUrl } rel="noreferrer noopener" target='_blank'>
-              {/* <img src='./img/work/crypto-maurits-brouwer.png' alt="Project oaky" />  */}
               <Image 
                 fileName="crypto-maurits-brouwer"
                 alt="Project Fivides"
