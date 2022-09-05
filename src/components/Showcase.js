@@ -44,7 +44,7 @@ function activateGsap() {
       scrub: true,
       pin: '.js-center-image',
       anticipatePin: 1,
-      markers: true,
+      // markers: true,
     }
   })
   .to(".js-center-image", centerImageProps() )
@@ -62,7 +62,7 @@ function activateGsap() {
       scrub: true,
       pin: '.js-showcase-side-pin',
       anticipatePin: 1,
-      markers: true,
+      // markers: true,
     }
   })
   .add('start')
