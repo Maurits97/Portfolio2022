@@ -127,10 +127,10 @@ export default function Showcase() {
             </a>
           </div>
           <div className={`js-side-image--four ${ styles['showcase__side-image'] } ${ styles['showcase__side-image--four'] }`}>
-            <a href={ workData.freelance[0].projectUrl } rel="noreferrer noopener" target='_blank'>
+            <a href={ workData.freelance[1].projectUrl } rel="noreferrer noopener" target='_blank'>
               <Image 
                 fileName="crypto-maurits-brouwer"
-                alt="Project Fivides"
+                alt="Project Crypto"
                 height="1400"
                 width="2480"
                 sizes="100vw"
