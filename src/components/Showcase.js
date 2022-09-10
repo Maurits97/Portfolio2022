@@ -103,13 +103,14 @@ export default function Showcase() {
               />
             </a>
           </div>
+          {/* TODO: Change this later to Beequip */}
           <div className={`js-side-image--two ${ styles['showcase__side-image'] } ${ styles['showcase__side-image--two'] }`}>
-            <a href={ workData.work[1].projectUrl } rel="noreferrer noopener" target='_blank'>
+            <a href={ 'https://dashmote.com' } rel="noreferrer noopener" target='_blank'>
               <Image 
-                fileName="oaky-maurits-brouwer"
-                alt="Project Beequip"
-                height="2159"
-                width="3477"
+                fileName="dashmote-maurits-brouwer"
+                alt="Project Dashmote"
+                height="1720"
+                width="2936"
                 sizes="100vw"
               />
             </a>

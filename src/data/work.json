@@ -11,7 +11,7 @@
     },
     {
       "projectName": "Beequip",
-      "stack": ["Development", "Sanity CMS", "Next.js", "Tailwindcss", "Swiper"],
+      "stack": ["Development", "Sanity CMS", "Next.js", "Typescript", "Tailwindcss", "Swiper"],
       "projectUrl": "https://Beequip.nl",
       "suffix": ".nl",
       "color": "#FFBF00",
