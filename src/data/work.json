@@ -34,7 +34,7 @@
       "stack": ["Development & design", "Next.js", "Prismic CMS", "Static Site Generation (SSG)", "Vercel", "SCSS"],
       "projectUrl": "https://brigittestark.nl",
       "color": "#595959",
-      "live": true,
+      "live": false,
       "activate": true
     },
     {
