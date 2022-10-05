@@ -116,10 +116,10 @@ export default function Showcase() {
             </a>
           </div>
           <div className={`js-side-image--three ${ styles['showcase__side-image'] } ${ styles['showcase__side-image--three'] }`}>
-            <a href={ workData.freelance[1].projectUrl } rel="noreferrer noopener" target='_blank'>
+            <a href={ workData.freelance[0].projectUrl } rel="noreferrer noopener" target='_blank'>
               <Image 
-                fileName="fivides-maurits-brouwer"
-                alt="Project Fivides"
+                fileName="artportfolio-maurits-brouwer"
+                alt="Project Art portfolio"
                 height="2096"
                 width="3086"
                 sizes="100vw"
@@ -131,8 +131,8 @@ export default function Showcase() {
               <Image 
                 fileName="crypto-maurits-brouwer"
                 alt="Project Crypto"
-                height="1400"
-                width="2480"
+                height="1780"
+                width="2477"
                 sizes="100vw"
               />
             </a>
