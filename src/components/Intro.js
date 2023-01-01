@@ -8,7 +8,7 @@ export default function Intro() {
         <SkewVelocity>
           <p>Hi, my name is Maurits Brouwer, an enthousiastic and creative front-end developer with a passion for design. I make cool digital products and make sure the end-user always has the right experience.</p>
           <p>I studied Communication &amp; Multimedia Design at The Hague University.</p>
-          <p>I am currently working at Coolblue in Rotterdam</p>
+          <p>I am currently working at Coolblue in Rotterdam.</p>
         </SkewVelocity>
       </div>
     </section>
