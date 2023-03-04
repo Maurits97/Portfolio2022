@@ -15,7 +15,7 @@
       "projectUrl": "https://Beequip.nl",
       "suffix": ".nl",
       "color": "#FFBF00",
-      "live": false,
+      "live": true,
       "activate": true
     },
     {
